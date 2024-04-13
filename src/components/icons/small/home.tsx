@@ -6,6 +6,7 @@ const SvgHome = (props: SVGProps<SVGSVGElement>) => (
     width="20"
     height="20"
     fill="none"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path
@@ -13,7 +14,11 @@ const SvgHome = (props: SVGProps<SVGSVGElement>) => (
       strokeWidth={1.5}
       d="m3.23 7.75 6-4.695a1.25 1.25 0 0 1 1.54 0l6 4.695c.303.237.48.6.48.985V16c0 .69-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25V8.735c0-.385.177-.748.48-.985Z"
     />
-    <path fill="#000" d="M8 14a2 2 0 1 1 4 0v3H8z" />
+    <path
+      stroke="#000"
+      strokeWidth={1.5}
+      d="M11.25 14v3.25h-2.5V14a1.25 1.25 0 1 1 2.5 0Z"
+    />
   </svg>
 );
 export default SvgHome;
