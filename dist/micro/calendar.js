@@ -24,7 +24,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgCircleCheck = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", fill: "none" }, props),
-    React.createElement("rect", { width: 18.5, height: 18.5, x: 2.75, y: 2.75, stroke: "#000", strokeWidth: 1.5, rx: 9.25 }),
-    React.createElement("path", { stroke: "#000", strokeLinecap: "round", strokeWidth: 1.5, d: "m8 12.389 3.2 3.111 4.8-7" })));
-exports.default = SvgCircleCheck;
+const SvgCalendar = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "none", viewBox: "0 0 16 16" }, props),
+    React.createElement("rect", { width: 10.5, height: 9.5, x: 2.75, y: 3.75, stroke: "#000", strokeWidth: 1.5, rx: 1.25 }),
+    React.createElement("path", { stroke: "#000", strokeWidth: 1.5, d: "M2 6.25h12" }),
+    React.createElement("path", { fill: "#000", d: "M11.75 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3zM5.75 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3z" })));
+exports.default = SvgCalendar;
