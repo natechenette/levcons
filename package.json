@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "16": "^0.0.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.4",
+    "@mui/x-data-grid": "^6.18.7"
+  },
+  "name": "levcons",
+  "version": "1.0.0",
+  "description": "Levro Icons",
+  "main": "index.js",
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "@svgr/rollup": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "svgo": "^3.2.0",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run optimize && npm run build:micro && npm run build:small && npm run build:default",
+    "optimize": "svgo -f ./src/icons/micro && svgo -f ./src/icons/small && svgo -f ./src/icons/default",
+    "build:micro": "svgr --icon --typescript --out-dir src/components/icons/micro --ext tsx --filename-case kebab src/icons/micro",
+    "build:small": "svgr --icon --typescript --out-dir src/components/icons/small --ext tsx --filename-case kebab src/icons/small",
+    "build:default": "svgr --icon --typescript --out-dir src/components/icons/default --ext tsx --filename-case kebab src/icons/default"
+  },
+  "author": "",
+  "license": "ISC"
+}

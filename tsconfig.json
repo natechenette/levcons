@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6", // Specify the target ECMAScript version
+      "module": "commonjs", // Specify the module code generation
+      "declaration": true, // Generate corresponding .d.ts files
+      "outDir": "./dist", // Redirect output structure to the directory
+      "strict": true, // Enable strict type checking
+      "esModuleInterop": true, // Enables the use of ES modules in CommonJS environment
+      "jsx": "react", // Support JSX for React
+      "noImplicitAny": true // Raise error on any implicit any type
+    },
+    "include": ["src/**/*"] // Include all files under the src directory
+  }
