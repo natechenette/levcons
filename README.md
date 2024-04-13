@@ -20,16 +20,17 @@ make sure there's no ems for heights and width on components
 replace props: `SVGProps<SVGSVGElement>` with `{ color = "#000", ...props }: Props`
 
 replace `props: SVGProps<SVGSVGElement>` with ``{ color = "#000", ...props }: Props`
+
 replace `import type { SVGProps } from "react";` with: 
 ```import type { SVGProps } from "react";
 
 interface Props extends SVGProps<SVGSVGElement> {
-  color?: string; // Define color prop
+  color?: string;
 }```
 
-replace `stroke="#000"` with `stroke={color}` and `fill={color}` with `fill={color}`
+replace `stroke="#000"` with `stroke={color}` and `fill="#000"` with `fill={color}`
 
-be sure to exclude .svgs
+be sure to exclude .svgs and README.md
 
 run `npm run build` 
 
