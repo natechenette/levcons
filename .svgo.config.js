@@ -33,8 +33,11 @@ module.exports = {
       'sortDefsChildren',
       'removeTitle',
       'removeDesc',
-      'removeDimensions',
       'removeAttrs',
+      {
+        "name": "removeDimensions",
+        "active": false
+      },
       'addClassesToSVGElement',
       'removeStyleElement',
       'removeScriptElement'
