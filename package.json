@@ -7,7 +7,7 @@
     "@mui/x-data-grid": "^6.18.7"
   },
   "name": "levcons",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Icon set used for Levro",
   "repository": {
     "type": "git",
@@ -30,9 +30,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run prebuild && npx tsc && npm run optimize && npm run generate",
     "optimize": "svgo -f ./src/icons/micro && svgo -f ./src/icons/small && svgo -f ./src/icons/default",
-    "generate": "svgr --icon --typescript --out-dir src/components/icons --ext tsx --filename-case kebab --typescript-declaration src/icons/micro src/icons/small src/icons/default",
+    "generate": "svgr --icon --typescript --declaration --out-dir src/components/icons --ext tsx --filename-case kebab src/icons/micro src/icons/small src/icons/default",
     "prebuild": "rm -rf dist"
-  },  
+  },
   "author": "Nate Chenette",
   "license": "MIT"
 }

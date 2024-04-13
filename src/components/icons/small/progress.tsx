@@ -8,7 +8,6 @@ const SvgProgress = (props: SVGProps<SVGSVGElement>) => (
     fill="none"
     {...props}
   >
-    <path fill="#fff" d="M0 0h20v20H0z" />
     <rect
       width={14.5}
       height={14.5}

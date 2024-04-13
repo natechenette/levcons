@@ -24,7 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgProgress = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none" }, props),
-    React.createElement("rect", { width: 18.5, height: 18.5, x: 2.75, y: 2.75, stroke: "#000", strokeWidth: 1.5, rx: 9.25 }),
-    React.createElement("path", { fill: "#000", fillRule: "evenodd", d: "M5 12a7 7 0 1 0 7-7v7z", clipRule: "evenodd" })));
-exports.default = SvgProgress;
+const SvgHome = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", fill: "none" }, props),
+    React.createElement("path", { stroke: "#000", strokeWidth: 1.5, d: "m3.237 9.194 8-6.16a1.25 1.25 0 0 1 1.526 0l8 6.16c.307.236.487.602.487.99V20c0 .69-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25v-9.816c0-.388.18-.754.487-.99Z" }),
+    React.createElement("path", { fill: "#000", d: "M9 16a3 3 0 1 1 6 0v5H9z" })));
+exports.default = SvgHome;
