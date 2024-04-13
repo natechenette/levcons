@@ -1,4 +1,7 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-declare const SvgCircle: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
+interface Props extends SVGProps<SVGSVGElement> {
+    color?: string;
+}
+declare const SvgCircle: ({ color, ...props }: Props) => React.JSX.Element;
 export default SvgCircle;

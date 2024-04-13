@@ -1,4 +1,7 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-declare const SvgProgress: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
+interface Props extends SVGProps<SVGSVGElement> {
+    color?: string;
+}
+declare const SvgProgress: ({ color, ...props }: Props) => React.JSX.Element;
 export default SvgProgress;

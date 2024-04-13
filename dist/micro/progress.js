@@ -22,9 +22,23 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgProgress = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "none" }, props),
-    React.createElement("rect", { width: 10.5, height: 10.5, x: 2.75, y: 2.75, stroke: "#000", strokeWidth: 1.5, rx: 5.25 }),
-    React.createElement("path", { fill: "#000", fillRule: "evenodd", d: "M5 8a3 3 0 1 0 3-3v3z", clipRule: "evenodd" })));
+const SvgProgress = (_a) => {
+    var { color = "#000" } = _a, props = __rest(_a, ["color"]);
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "none" }, props),
+        React.createElement("rect", { width: 10.5, height: 10.5, x: 2.75, y: 2.75, stroke: color, strokeWidth: 1.5, rx: 5.25 }),
+        React.createElement("path", { fill: color, fillRule: "evenodd", d: "M5 8a3 3 0 1 0 3-3v3z", clipRule: "evenodd" })));
+};
 exports.default = SvgProgress;

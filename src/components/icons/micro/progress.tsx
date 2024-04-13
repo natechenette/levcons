@@ -1,6 +1,10 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-const SvgProgress = (props: SVGProps<SVGSVGElement>) => (
+
+interface Props extends SVGProps<SVGSVGElement> {
+  color?: string; // Define color prop
+}
+const SvgProgress = ({ color = "#000", ...props }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="16"
@@ -13,12 +17,12 @@ const SvgProgress = (props: SVGProps<SVGSVGElement>) => (
       height={10.5}
       x={2.75}
       y={2.75}
-      stroke="#000"
+      stroke={color}
       strokeWidth={1.5}
       rx={5.25}
     />
     <path
-      fill="#000"
+      fill={color}
       fillRule="evenodd"
       d="M5 8a3 3 0 1 0 3-3v3z"
       clipRule="evenodd"
