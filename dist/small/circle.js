@@ -24,6 +24,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgCircle = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "none", viewBox: "0 0 20 20" }, props),
+const SvgCircle = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "none" }, props),
     React.createElement("rect", { width: 14.5, height: 14.5, x: 2.75, y: 2.75, stroke: "#000", strokeWidth: 1.5, rx: 7.25 })));
 exports.default = SvgCircle;

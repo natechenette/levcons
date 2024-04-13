@@ -7,7 +7,7 @@
     "@mui/x-data-grid": "^6.18.7"
   },
   "name": "levcons",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Icon set used for Levro",
   "repository": {
     "type": "git",

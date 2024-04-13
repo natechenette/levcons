@@ -24,7 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgHome = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "none" }, props),
-    React.createElement("path", { stroke: "#000", strokeWidth: 1.5, d: "m3.23 7.75 6-4.695a1.25 1.25 0 0 1 1.54 0l6 4.695c.303.237.48.6.48.985V16c0 .69-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25V8.735c0-.385.177-.748.48-.985Z" }),
-    React.createElement("path", { stroke: "#000", strokeWidth: 1.5, d: "M11.25 14v3.25h-2.5V14a1.25 1.25 0 1 1 2.5 0Z" })));
-exports.default = SvgHome;
+const SvgCircleCheck = (props) => (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", fill: "none", viewBox: "0 0 20 20" }, props),
+    React.createElement("rect", { width: 14.5, height: 14.5, x: 2.75, y: 2.75, stroke: "#000", strokeWidth: 1.5, rx: 7.25 }),
+    React.createElement("path", { stroke: "#000", strokeLinecap: "round", strokeWidth: 1.5, d: "M7 10.278 9.4 12.5l3.6-5" })));
+exports.default = SvgCircleCheck;
