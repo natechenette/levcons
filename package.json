@@ -8,8 +8,17 @@
   },
   "name": "levcons",
   "version": "1.0.0",
-  "description": "Levro Icons",
-  "main": "index.js",
+  "description": "Icon set used for Levro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natechenette/levcons"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src/components/icons"
+  ],
   "devDependencies": {
     "@svgr/cli": "^8.1.0",
     "@svgr/rollup": "^8.1.0",
@@ -19,11 +28,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run optimize && npm run build:micro && npm run build:small && npm run build:default",
+    "build": "npm run optimize && npm run generate",
     "optimize": "svgo -f ./src/icons/micro && svgo -f ./src/icons/small && svgo -f ./src/icons/default",
-    "build:micro": "svgr --icon --typescript --out-dir src/components/icons/micro --ext tsx --filename-case kebab src/icons/micro",
-    "build:small": "svgr --icon --typescript --out-dir src/components/icons/small --ext tsx --filename-case kebab src/icons/small",
-    "build:default": "svgr --icon --typescript --out-dir src/components/icons/default --ext tsx --filename-case kebab src/icons/default"
+    "generate": "svgr --icon --typescript --out-dir src/components/icons --ext tsx --filename-case kebab --typescript-declaration src/icons/micro src/icons/small src/icons/default",
+    "prebuild": "rm -rf dist"
   },
   "author": "",
   "license": "ISC"

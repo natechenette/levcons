@@ -1,0 +1,9 @@
+# Exclude source files
+src/
+
+# Exclude dev dependencies
+node_modules/
+
+# Exclude build tools and configs
+.svgo.config.js
+tsconfig.json
