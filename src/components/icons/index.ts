@@ -13,8 +13,8 @@ export { default as HomeIconSmall } from './small/home';
 export { default as CircleIconSmall } from './small/circle';
 export { default as CircleCheckIconSmall } from './small/circle-check';
 export { default as CalendarIconSmall } from './small/calendar';
-export { default as CalendarPlusIconSmall } from './micro/calendar-plus';
-export { default as CurrencyDollarIconSmall } from './micro/currency-dollar';
+export { default as CalendarPlusIconSmall } from './small/calendar-plus';
+export { default as CurrencyDollarIconSmall } from './small/currency-dollar';
 
 
 // Default icons
@@ -23,5 +23,5 @@ export { default as HomeIcon } from './default/home';
 export { default as CircleIcon } from './default/circle';
 export { default as CircleCheckIcon } from './default/circle-check';
 export { default as CalendarIcon } from './default/calendar';
-export { default as CalendarPlusIcon } from './micro/calendar-plus';
-export { default as CurrencyDollarIcon } from './micro/currency-dollar';
+export { default as CalendarPlusIcon } from './default/calendar-plus';
+export { default as CurrencyDollarIcon } from './default/currency-dollar';
