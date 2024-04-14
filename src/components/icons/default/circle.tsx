@@ -2,7 +2,7 @@ import * as React from "react";
 import type { SVGProps } from "react";
 
 interface Props extends SVGProps<SVGSVGElement> {
-  color?: string; // Define color prop
+  color?: string;
 }
 const SvgCircle = ({ color = "#000", ...props }: Props) => (
   <svg
@@ -10,6 +10,7 @@ const SvgCircle = ({ color = "#000", ...props }: Props) => (
     width="24"
     height="24"
     fill="none"
+    viewBox="0 0 24 24"
     {...props}
   >
     <rect

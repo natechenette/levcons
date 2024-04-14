@@ -2,7 +2,7 @@ import * as React from "react";
 import type { SVGProps } from "react";
 
 interface Props extends SVGProps<SVGSVGElement> {
-  color?: string; // Define color prop
+  color?: string;
 }
 const SvgHome = ({ color = "#000", ...props }: Props) => (
   <svg
@@ -10,17 +10,13 @@ const SvgHome = ({ color = "#000", ...props }: Props) => (
     width="20"
     height="20"
     fill="none"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path
       stroke={color}
       strokeWidth={1.5}
-      d="m3.23 7.75 6-4.695a1.25 1.25 0 0 1 1.54 0l6 4.695c.303.237.48.6.48.985V16c0 .69-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25V8.735c0-.385.177-.748.48-.985Z"
-    />
-    <path
-      stroke={color}
-      strokeWidth={1.5}
-      d="M11.25 14v3.25h-2.5V14a1.25 1.25 0 1 1 2.5 0Z"
+      d="m3.613 7.45 5-3.913a2.25 2.25 0 0 1 2.774 0l5 3.913a2.25 2.25 0 0 1 .863 1.772V15A2.25 2.25 0 0 1 15 17.25h-2.5a.25.25 0 0 1-.25-.25v-3a2.25 2.25 0 0 0-4.5 0v3a.25.25 0 0 1-.25.25H5A2.25 2.25 0 0 1 2.75 15V9.222c0-.692.318-1.346.863-1.772Z"
     />
   </svg>
 );

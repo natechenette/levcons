@@ -2,7 +2,7 @@ import * as React from "react";
 import type { SVGProps } from "react";
 
 interface Props extends SVGProps<SVGSVGElement> {
-  color?: string; // Define color prop
+  color?: string;
 }
 const SvgProgress = ({ color = "#000", ...props }: Props) => (
   <svg
@@ -10,6 +10,7 @@ const SvgProgress = ({ color = "#000", ...props }: Props) => (
     width="16"
     height="16"
     fill="none"
+    viewBox="0 0 16 16"
     {...props}
   >
     <rect

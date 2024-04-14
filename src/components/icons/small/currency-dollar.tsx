@@ -4,30 +4,30 @@ import type { SVGProps } from "react";
 interface Props extends SVGProps<SVGSVGElement> {
   color?: string;
 }
-const SvgCircleCheck = ({ color = "#000", ...props }: Props) => (
+const SvgCurrencyDollar = ({ color = "#000", ...props }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width="20"
+    height="20"
     fill="none"
-    viewBox="0 0 24 24"
+    viewBox="0 0 20 20"
     {...props}
   >
     <rect
-      width={18.5}
-      height={18.5}
+      width={14.5}
+      height={14.5}
       x={2.75}
       y={2.75}
       stroke={color}
       strokeWidth={1.5}
-      rx={9.25}
+      rx={7.25}
     />
     <path
       stroke={color}
       strokeLinecap="round"
       strokeWidth={1.5}
-      d="m8 12.389 3.2 3.111 4.8-7"
+      d="M12 7H9a1.5 1.5 0 0 0-1.5 1.5v0A1.5 1.5 0 0 0 9 10h2.25a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1-1.5 1.5h-3M10.313 5.5v9"
     />
   </svg>
 );
-export default SvgCircleCheck;
+export default SvgCurrencyDollar;

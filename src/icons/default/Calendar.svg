@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><rect width="18.5" height="17.5" x="2.75" y="3.75" stroke="#000" stroke-width="1.5" rx="1.25"/><path stroke="#000" stroke-width="1.5" d="M2 7.795h19.636"/><path fill="#000" d="M17.477 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3zM7.66 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3z"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2.75" y="4.75" width="18.5" height="16.5" rx="2.25" stroke="black" stroke-width="1.5"/>
+<line x1="2" y1="8.25" x2="21.6364" y2="8.25" stroke="black" stroke-width="1.5"/>
+<path d="M17.4773 3C17.4773 2.58579 17.1415 2.25 16.7273 2.25C16.3131 2.25 15.9773 2.58579 15.9773 3L17.4773 3ZM15.9773 3L15.9773 4L17.4773 4L17.4773 3L15.9773 3Z" fill="black"/>
+<path d="M7.65909 3C7.65909 2.58579 7.3233 2.25 6.90909 2.25C6.49487 2.25 6.15909 2.58579 6.15909 3L7.65909 3ZM6.15909 3L6.15909 4L7.65909 4L7.65909 3L6.15909 3Z" fill="black"/>
+<rect x="6.25" y="11.5" width="1.5" height="1.5" fill="black"/>
+<rect x="8.75" y="11.5" width="1.5" height="1.5" fill="black"/>
+<rect x="11.25" y="11.5" width="1.5" height="1.5" fill="black"/>
+<rect x="13.75" y="11.5" width="1.5" height="1.5" fill="black"/>
+<rect x="16.25" y="11.5" width="1.5" height="1.5" fill="black"/>
+<rect x="6.25" y="14" width="1.5" height="1.5" fill="black"/>
+<rect x="8.75" y="14" width="1.5" height="1.5" fill="black"/>
+<rect x="11.25" y="14" width="1.5" height="1.5" fill="black"/>
+<rect x="13.75" y="14" width="1.5" height="1.5" fill="black"/>
+<rect x="16.25" y="14" width="1.5" height="1.5" fill="black"/>
+<rect x="6.25" y="16.5" width="1.5" height="1.5" fill="black"/>
+<rect x="8.75" y="16.5" width="1.5" height="1.5" fill="black"/>
+<rect x="11.25" y="16.5" width="1.5" height="1.5" fill="black"/>
+</svg>

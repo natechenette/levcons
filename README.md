@@ -19,6 +19,9 @@ make sure there's no ems for heights and width on components
 
 replace props: `SVGProps<SVGSVGElement>` with `{ color = "#000", ...props }: Props`
 
+or 
+`({ color = "#000", ...props }: Props)` 
+
 replace `props: SVGProps<SVGSVGElement>` with ``{ color = "#000", ...props }: Props`
 
 replace `import type { SVGProps } from "react";` with: 
