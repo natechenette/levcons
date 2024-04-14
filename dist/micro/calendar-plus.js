@@ -35,9 +35,12 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgHome = (_a) => {
+const SvgCalendarPlus = (_a) => {
     var { color = "#000" } = _a, props = __rest(_a, ["color"]);
     return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "none", viewBox: "0 0 16 16" }, props),
-        React.createElement("path", { stroke: color, strokeWidth: 1.5, d: "m3.25 6 4-3a1.25 1.25 0 0 1 1.5 0l4 3c.315.236.5.607.5 1v5c0 .69-.56 1.25-1.25 1.25h-2a.25.25 0 0 1-.25-.25v-2a1.75 1.75 0 1 0-3.5 0v2a.25.25 0 0 1-.25.25H4c-.69 0-1.25-.56-1.25-1.25V7c0-.393.185-.764.5-1Z" })));
+        React.createElement("rect", { width: 10.5, height: 9.5, x: 2.75, y: 3.75, stroke: color, strokeWidth: 1.5, rx: 1.25 }),
+        React.createElement("path", { stroke: color, strokeWidth: 1.5, d: "M2 6.25h12" }),
+        React.createElement("path", { fill: color, d: "M11.75 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3zM5.75 3a.75.75 0 0 0-1.5 0zm-1.5 0v1h1.5V3z" }),
+        React.createElement("path", { stroke: color, strokeLinecap: "round", strokeWidth: 1.5, d: "M8 8.25v3M9.5 9.75h-3" })));
 };
-exports.default = SvgHome;
+exports.default = SvgCalendarPlus;

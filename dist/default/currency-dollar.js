@@ -35,9 +35,10 @@ var __rest = (this && this.__rest) || function (s, e) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __importStar(require("react"));
-const SvgHome = (_a) => {
+const SvgCurrencyDollar = (_a) => {
     var { color = "#000" } = _a, props = __rest(_a, ["color"]);
-    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "none", viewBox: "0 0 16 16" }, props),
-        React.createElement("path", { stroke: color, strokeWidth: 1.5, d: "m3.25 6 4-3a1.25 1.25 0 0 1 1.5 0l4 3c.315.236.5.607.5 1v5c0 .69-.56 1.25-1.25 1.25h-2a.25.25 0 0 1-.25-.25v-2a1.75 1.75 0 1 0-3.5 0v2a.25.25 0 0 1-.25.25H4c-.69 0-1.25-.56-1.25-1.25V7c0-.393.185-.764.5-1Z" })));
+    return (React.createElement("svg", Object.assign({ xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", fill: "none", viewBox: "0 0 24 24" }, props),
+        React.createElement("rect", { width: 18.5, height: 18.5, x: 2.75, y: 2.75, stroke: color, strokeWidth: 1.5, rx: 9.25 }),
+        React.createElement("path", { stroke: color, strokeLinecap: "round", strokeWidth: 1.5, d: "M14.5 8h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h3a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4M12.25 6v12" })));
 };
-exports.default = SvgHome;
+exports.default = SvgCurrencyDollar;
